@@ -8,15 +8,21 @@ class ComposerStaticInit5f2838bd3f083d93119ab983474556c8
 {
     public static $files = array (
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
+        '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '25072dd6e2470089de65ae7bf11d3109' => __DIR__ . '/..' . '/symfony/polyfill-php72/bootstrap.php',
         '667aeda72477189d0494fecd327c3641' => __DIR__ . '/..' . '/symfony/var-dumper/Resources/functions/dump.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'T' => 
+        array (
+            'Twig\\' => 5,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php72\\' => 23,
             'Symfony\\Polyfill\\Mbstring\\' => 26,
+            'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Component\\VarDumper\\' => 28,
         ),
         'A' => 
@@ -26,6 +32,10 @@ class ComposerStaticInit5f2838bd3f083d93119ab983474556c8
     );
 
     public static $prefixDirsPsr4 = array (
+        'Twig\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/twig/twig/src',
+        ),
         'Symfony\\Polyfill\\Php72\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php72',
@@ -33,6 +43,10 @@ class ComposerStaticInit5f2838bd3f083d93119ab983474556c8
         'Symfony\\Polyfill\\Mbstring\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-mbstring',
+        ),
+        'Symfony\\Polyfill\\Ctype\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/polyfill-ctype',
         ),
         'Symfony\\Component\\VarDumper\\' => 
         array (
@@ -45,6 +59,13 @@ class ComposerStaticInit5f2838bd3f083d93119ab983474556c8
     );
 
     public static $prefixesPsr0 = array (
+        'T' => 
+        array (
+            'Twig_' => 
+            array (
+                0 => __DIR__ . '/..' . '/twig/twig/lib',
+            ),
+        ),
         'B' => 
         array (
             'Bramus' => 
