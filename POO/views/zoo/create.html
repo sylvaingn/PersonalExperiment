@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="{{ base_path ~ '/zoos' }}" method="post">
+
+    <label for="forName">Nom : </label>
+    <input id="forName" type="text" name="name" required>
+
+    <label for="forCity">City : </label>
+    <input id="forCity" type="text" name="city" required>
+
+    <input class="button" type="submit">
+
+
+</form>
+
+{% endblock %}
