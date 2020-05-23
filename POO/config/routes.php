@@ -12,27 +12,27 @@ $router->get('/', 'AppController@index');
 
 $router->get("/animaux", "AnimalController@index");
 $router->get("/animaux/create", "AnimalController@create");
-$router->get("/animaux", "AnimalController@new");
+$router->post("/animaux", "AnimalController@new");
 $router->get("/animaux/(\w+)/edit", "AnimalController@edit");
-$router->get("/animaux/(\w+)/edit", "AnimalController@update");
-$router->get("/animaux/(\w+)/delete", "AnimalController@delete");
+$router->post("/animaux/(\w+)/edit", "AnimalController@update");
+$router->post("/animaux/(\w+)/delete", "AnimalController@delete");
 $router->get("/animaux/(\w+)", "AnimalController@show");
 
 $router->get("/zoos", "ZooController@index");
 $router->get("/zoos/create", "ZooController@create");
-$router->get("/zoos", "ZooController@new");
+$router->post("/zoos", "ZooController@new");
 $router->get("/zoos/(\w+)/edit", "ZooController@edit");
-$router->get("/zoos/(\w+)/edit", "ZooController@update");
-$router->get("/zoos/(\w+)/delete", "ZooController@delete");
+$router->post("/zoos/(\w+)/edit", "ZooController@update");
+$router->post("/zoos/(\w+)/delete", "ZooController@delete");
 $router->get("/zoos/(\w+)", "ZooController@show");
 
 
 $router->get("/animal_zoo", "AnimalZooController@index");
 $router->get("/animal_zoo/create", "AnimalZooController@create");
-$router->get("/animal_zoo", "AnimalZooController@new");
+$router->post("/animal_zoo", "AnimalZooController@new");
 $router->get("/animal_zoo/(\w+)/edit", "AnimalZooController@edit");
-$router->get("/animal_zoo/(\w+)/edit", "AnimalZooController@update");
-$router->get("/animal_zoo/(\w+)/delete", "AnimalZooController@delete");
+$router->post("/animal_zoo/(\w+)/edit", "AnimalZooController@update");
+$router->post("/animal_zoo/(\w+)/delete", "AnimalZooController@delete");
 $router->get("/animal_zoo/(\w+)", "AnimalZooController@show");
 
 
