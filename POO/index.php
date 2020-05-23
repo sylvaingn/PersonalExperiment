@@ -10,6 +10,12 @@ require __DIR__ . '/vendor/autoload.php';
 
 
 $router = new Router;
+$router->setNamespace('App\Controller');
+
+
+
+$router->get('/animaux', 'ArticlesController@index');
+
 
 $router->get("/conditions", function(){
     echo "Voici les conditions d'utilisation.";
