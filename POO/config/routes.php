@@ -7,6 +7,9 @@ $router = new Router;
 $router->setNamespace('App\Controller');
 
 
+$router->get('/', 'AppController@index');
+
+
 $router->get("/animaux", "AnimalController@index");
 $router->get("/animaux/create", "AnimalController@create");
 $router->get("/animaux", "AnimalController@new");
