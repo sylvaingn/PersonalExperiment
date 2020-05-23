@@ -7,9 +7,7 @@ $router = new Router;
 $router->setNamespace('App\Controller');
 
 
-$router->get('/articles/(\d+)', 'ArticlesController@show');
 
-$router->get('/articles', 'ArticlesController@index');
 
 
 $router->get("/conditions", function(){
@@ -18,10 +16,6 @@ $router->get("/conditions", function(){
 
 $router->get("/articles/(\d+)", function($id){
     echo "Voici l'article numéro ".$id.".";
-});
-
-$router->get("/product/{produit}", function($produit){
-    echo "Voici le produit demandé : ".$produit.".";
 });
 
 
