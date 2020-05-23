@@ -25,6 +25,8 @@ class AnimalZooController extends AbstractController
     public static function new()
     {
         echo self::getTwig()->render('animal_zoo/new.html');
+        var_dump($_POST);
+
     }
 
     public static function edit(int $id)
