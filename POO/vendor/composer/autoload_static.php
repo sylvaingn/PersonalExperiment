@@ -55,7 +55,9 @@ class ComposerStaticInit5f2838bd3f083d93119ab983474556c8
     );
 
     public static $classMap = array (
-        'App\\Controller\\ArticlesController' => __DIR__ . '/../..' . '/src/controller/ArticlesController.php',
+        'App\\Controller\\AnimalController' => __DIR__ . '/../..' . '/src/controller/AnimalController.php',
+        'App\\Controller\\AnimalZooController' => __DIR__ . '/../..' . '/src/controller/AnimalZooController.php',
+        'App\\Controller\\ZooController' => __DIR__ . '/../..' . '/src/controller/ZooController.php',
         'App\\Model\\Animal' => __DIR__ . '/../..' . '/src/model/Animal.php',
         'App\\Model\\AnimalZoo' => __DIR__ . '/../..' . '/src/model/AnimalZoo.php',
         'App\\Model\\Zoo' => __DIR__ . '/../..' . '/src/model/Zoo.php',

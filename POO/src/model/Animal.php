@@ -23,8 +23,8 @@ class Animal
     /**
      * @return int
      */
-    public function getId(){
-
+    public function getId()
+    {
         return $this->id;
     }
 
@@ -32,7 +32,8 @@ class Animal
      * @param int $id
      * @return self
      */
-    public function setId(int $id){
+    public function setId(int $id)
+    {
 
         $this->id = $id;
         return $this;
@@ -42,7 +43,8 @@ class Animal
     /**
      * @return string
      */
-    public function getSpecies(){
+    public function getSpecies()
+    {
 
         return $this->species;
     }
@@ -51,7 +53,8 @@ class Animal
      * @param string $species
      * @return self
      */
-    public function setSpecies(string $species){
+    public function setSpecies(string $species)
+    {
 
         $this->species = $species;
         return $this;
@@ -61,7 +64,8 @@ class Animal
     /**
      * @return string
      */
-    public function getCountry(){
+    public function getCountry()
+    {
 
         return $this->country;
     }
@@ -70,10 +74,10 @@ class Animal
      * @param string $country
      * @return self
      */
-    public function setCountry(string $country){
+    public function setCountry(string $country)
+    {
 
         $this->country = $country;
         return $this;
     }
-
 }
