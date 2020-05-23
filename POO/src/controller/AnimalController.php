@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use Symfony\Component\VarDumper\VarDumper;
+
 class AnimalController extends AbstractController
 {
 
@@ -28,6 +30,7 @@ class AnimalController extends AbstractController
     public static function new()
     {
         echo self::getTwig()->render('animal/new.html');
+        var_dump($_POST);
     }
 
     
