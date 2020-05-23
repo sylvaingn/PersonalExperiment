@@ -10,33 +10,45 @@ class AnimalController extends AbstractController
         echo self::getTwig()->render('animal/index.html');
     }
 
-    public static function show(int $id)
+    
+    public static function show($id)
     {
-        echo "L'animal numéro " . $id;
+        echo self::getTwig()->render('animal/show.html', [
+            'idanimal' => $id
+        ]);
     }
 
+    
     public static function create()
     {
-        echo "Créer un animal";
+        echo self::getTwig()->render('animal/create.html');
     }
 
+    
     public static function new()
     {
-        echo "L'animal vient d'être créé.";
+        echo self::getTwig()->render('animal/new.html');
     }
 
+    
     public static function edit(int $id)
     {
-        echo "Modifier l'animal " . $id;
+        echo self::getTwig()->render('animal/edit.html', [
+            'idanimal' => $id
+        ]);
     }
+
 
     public static function update()
     {
-        echo "L'animal vient d'être mis à jour.";
+        echo self::getTwig()->render('animal/update.html');
     }
+
 
     public static function delete(int $id)
     {
-        echo "L'animal " . $id . " vient d'être supprimé.";
+        echo self::getTwig()->render('animal/delete.html', [
+            'idanimal' => $id
+        ]);
     }
 }

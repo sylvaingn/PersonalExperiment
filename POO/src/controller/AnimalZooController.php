@@ -7,36 +7,42 @@ class AnimalZooController extends AbstractController
 
     public static function index()
     {
-        echo "La liste de tous les animaux_zoos.";
+        echo self::getTwig()->render('animal_zoo/index.html');
     }
 
     public static function show(int $id)
     {
-        echo "L'animal_zoo numéro " . $id;
+        echo self::getTwig()->render('animal_zoo/show.html', [
+            'idanimal_zoo' => $id
+        ]);
     }
 
     public static function create()
     {
-        echo "Créer un animal_zoo";
+        echo self::getTwig()->render('animal_zoo/create.html');
     }
 
     public static function new()
     {
-        echo "L'animal_zoo vient d'être créé.";
+        echo self::getTwig()->render('animal_zoo/new.html');
     }
 
     public static function edit(int $id)
     {
-        echo "Modifier l'animal_zoo " . $id;
+        echo self::getTwig()->render('animal_zoo/edit.html', [
+            'idanimal_zoo' => $id
+        ]);
     }
 
     public static function update()
     {
-        echo "L'animal_zoo vient d'être mis à jour.";
+        echo self::getTwig()->render('animal_zoo/update.html');
     }
 
     public static function delete(int $id)
     {
-        echo "L'animal_zoo " . $id . " vient d'être supprimé.";
+        echo self::getTwig()->render('animal_zoo/delete.html', [
+            'idanimal_zoo' => $id
+        ]);
     }
 }
