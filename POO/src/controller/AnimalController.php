@@ -7,7 +7,7 @@ class AnimalController extends AbstractController
 
     public static function index()
     {
-        echo self::getTwig()->render('animal.html');
+        echo self::getTwig()->render('animal/index.html');
     }
 
     public static function show(int $id)
