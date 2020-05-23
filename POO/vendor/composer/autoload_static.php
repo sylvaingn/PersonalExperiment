@@ -19,6 +19,10 @@ class ComposerStaticInit5f2838bd3f083d93119ab983474556c8
             'Symfony\\Polyfill\\Mbstring\\' => 26,
             'Symfony\\Component\\VarDumper\\' => 28,
         ),
+        'A' => 
+        array (
+            'App\\' => 4,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -34,6 +38,10 @@ class ComposerStaticInit5f2838bd3f083d93119ab983474556c8
         array (
             0 => __DIR__ . '/..' . '/symfony/var-dumper',
         ),
+        'App\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/src',
+        ),
     );
 
     public static $prefixesPsr0 = array (
@@ -46,12 +54,20 @@ class ComposerStaticInit5f2838bd3f083d93119ab983474556c8
         ),
     );
 
+    public static $classMap = array (
+        'App\\Controller\\ArticlesController' => __DIR__ . '/../..' . '/src/controller/ArticlesController.php',
+        'App\\Model\\Animal' => __DIR__ . '/../..' . '/src/model/Animal.php',
+        'App\\Model\\AnimalZoo' => __DIR__ . '/../..' . '/src/model/AnimalZoo.php',
+        'App\\Model\\Zoo' => __DIR__ . '/../..' . '/src/model/Zoo.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInit5f2838bd3f083d93119ab983474556c8::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInit5f2838bd3f083d93119ab983474556c8::$prefixDirsPsr4;
             $loader->prefixesPsr0 = ComposerStaticInit5f2838bd3f083d93119ab983474556c8::$prefixesPsr0;
+            $loader->classMap = ComposerStaticInit5f2838bd3f083d93119ab983474556c8::$classMap;
 
         }, null, ClassLoader::class);
     }
