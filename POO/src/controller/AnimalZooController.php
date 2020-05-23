@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-class AnimalZooController
+class AnimalZooController extends AbstractController
 {
 
     public static function index()

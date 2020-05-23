@@ -2,12 +2,12 @@
 
 namespace App\Controller;
 
-class AnimalController
+class AnimalController extends AbstractController
 {
 
     public static function index()
     {
-        echo "La liste de tous les animaux.";
+        echo self::getTwig()->render('animal.html');
     }
 
     public static function show(int $id)
