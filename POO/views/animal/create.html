@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<form action="{{ base_path ~ '/animaux' }}" method="post">
+
+    <label for="forSpecies">Espèce : </label>
+    <input id="forSpecies" type="text" name="species" required>
+
+    <label for="forCountry">Pays : </label>
+    <input id="forCountry" type="text" name="country" required>
+
+    <input class="button" type="submit">
+
+
+</form>
+
+{% endblock %}
